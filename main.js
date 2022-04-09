@@ -27,7 +27,7 @@ const readClient = () => getLocalStorage()
 
 const createClient = (client) => {
     const dbClient = getLocalStorage()
-    dbClient.push (client)
+    dbClient.push(client)
     setLocalStorage(dbClient)
 }
 
@@ -70,8 +70,8 @@ const createRow = (client, index) => {
         <td>${client.celular}</td>
         <td>${client.cidade}</td>
         <td>
-            <button type="button" class="button green" id="edit-${index}"><img src="editar.png"</button>
-            <button type="button" class="button red" id="delete-${index}"><img src="delete.png"></button>
+            <button type="button" class="button green" id="edit-${index}"><img src="./images/editar.png"</button>
+            <button type="button" class="button red" id="delete-${index}"><img src="./images/delete.png"></button>
         </td>
     `
     document.querySelector('#tableClient>tbody').appendChild(newRow)
